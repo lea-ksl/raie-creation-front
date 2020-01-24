@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title">datepickerftw</h5>
+      <div style="width:500px; margin: 0 auto">
+      <dl-date-time-picker
+	startView="day"
+	maxView="year"
+	minView="hour"
+	minuteStep="30"
+  [(ngModel)]="rdv.date"
+  (change)='onChange($event)'
+>
+</dl-date-time-picker>
+</div>
+    </div>
+    <div>
+<div><span>date reservée: </span>{{ rdv.date }}</div>
+    </div>
+  </div>
